@@ -1,0 +1,80 @@
+:root {}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 150px;
+    height: 200px;
+}
+
+body {
+    background: #e2d9c8;
+}
+
+.container {
+    margin: 1.5rem;
+}
+
+
+/* HEADER - NAV - LOGO */
+.header {
+    background-image: url(barista.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* negro con opacidad */
+    background-blend-mode: soft-light;
+    /* combina el color con la imagen */
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    height: 16.5rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    font-family: "Tagesschrift", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.menu span {
+    font-size: 1.5rem;
+}
+
+.menu ul li {
+    list-style: none;
+    display: none;
+
+}
+
+.container_title {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    padding: 1.3rem 0;
+}
+
+.subtitle {
+    padding: 0.5rem 0
+}
+
+.btn {
+    width: 7rem;
+    padding: 0.7rem;
+    margin: 2rem 5.5rem;
+    border-radius: 3rem;
+    text-align: center;
+    background: #ffff;
+    box-shadow: 1px 3px 6px #666666;
+    color: black;
+}
+

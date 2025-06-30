@@ -189,7 +189,6 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    visibility: 0.1;
     height: 16rem;
     text-align: center;
     padding: 1rem;
@@ -261,21 +260,89 @@ body {
     margin: 1rem;
     border-radius: 2rem;
 }
-.name{
+
+.name {
     font-family: var(--fuente-terciaria);
     font-weight: bolder;
     font-size: 1.5rem;
 }
-.comment_side{
+
+.comment_side {
     padding: .2rem;
 }
-.stars{
+
+.stars {
     padding: .5rem;
 }
-.comments_text{
+
+.comments_text {
     font-family: var(--fuente-principal);
     padding: .1rem;
 }
+
+/* SECTION NEWSLETTERS */
+
+
+.container_newsletters {
+    background-image: linear-gradient(rgba(134, 116, 116, 0.51), rgba(157, 151, 151, 0.47)), url(image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 23rem;
+}
+
+.text_newsletters {
+    padding: 3rem;
+    text-align: center;
+    font-family: var(--fuente-principal);
+    font-weight: bolder;
+    font-size: 1.3rem;
+    text-shadow: .1rem 0.1rem rgb(13, 12, 12);
+    color: white;
+}
+
+
+.subtitle_newsletters {
+    margin-top: .5rem;
+}
+
+
+.form {
+    font-size: 1.2rem;
+    text-align: center;
+    
+}
+
+#email {
+    width: 90%;
+    height: 2rem;
+    padding: 1.4rem;
+    border-radius: 0.4rem;
+    box-sizing: border-box;
+}
+
+#email::placeholder{
+    font-family: var(--fuente-principal);
+}
+#email:focus{
+    border: 1px solid rgb(43, 15, 15);
+    font-family: var(--fuente-principal);
+}
+
+.btn_form{
+    font-family: var(--fuente-principal);
+    background: var(--btn-background);
+    color: white;
+    padding:1.2rem;
+    text-align: center;
+    border-radius: var(--btn-border-radius);
+    box-shadow: var(--btn-box-shadow);
+    margin-top: 2rem;
+}
+
+/*FOOTER/*
+
+
 /*GRID CODIGO ARA DESPUES 
 
     grid-template-columns: 1fr 1fr 1fr 1fr;*/

@@ -7,6 +7,9 @@
     --btn-text-align: center;
     --btn-border-radius: 3rem;
     --btn-padding: 0.7rem;
+    --btn-background: #31271d;
+    --fuente-terciaria: "Playfair Display", serif;
+    --fuente-cuarta: "Outfit", sans-serif;
 }
 
 
@@ -108,15 +111,13 @@ body {
 /* GALLERY SECTION */
 
 .section_container_grid {
-    background: var(--color-background);
-
+    background: #f1f0ee
 }
 
 .section2_title {
     font-family: var(--fuente-principal);
     padding-top: 3rem;
-    padding-bottom: 2.5rem;
-    margin: 2rem; 
+    margin: 0 2rem 2rem 2rem;
     text-align: center;
     font-size: var(--font-size-title)
 }
@@ -124,51 +125,157 @@ body {
 .container_grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
- 
     max-width: 1000px;
     gap: 2rem;
     margin: 0 auto;
     padding: 0 4rem;
+    padding-bottom: 4rem;
 }
-.card{
-    background: #edeae3;
 
+.card {
+    background: #edeae3;
     text-align: center;
 }
-.img_grid{
+
+.img_grid {
     width: 200px;
     height: 250px;
     object-fit: cover;
     border-radius: 1.5rem;
     padding-top: 1.2em;
 }
-.title_grid{
+
+.title_grid {
     font-size: 1.5rem;
     font-family: var(--fuente-secundaria);
     padding: 1rem 1.3rem;
     text-align: start;
     letter-spacing: 0.1rem;
 }
-.subtitle_grid{
+
+.subtitle_grid {
     text-align: start;
     padding: 0 1.3rem;
     font-family: var(--fuente-principal);
 }
-.price_container{
+
+.price_container {
     display: flex;
     justify-content: space-between;
     padding: 1rem 1.5rem;
 }
-.title_price{
+
+.title_price {
     font-family: var(--fuente-secundaria);
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
 }
-.btn_card{
-    background: #ffff;
+
+.btn_card {
+    color: white;
+    background: var(--btn-background);
     padding: var(--btn-padding);
     box-shadow: var(--btn-box-shadow);
     border-radius: var(--btn-border-radius);
     text-align: var(--btn-text-align);
     font-family: var(--fuente-principal);
 }
+
+
+/* SECCION 3 CHECKOUT*/
+
+.container_checkout {
+    background-image: url(seccion3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    visibility: 0.1;
+    height: 16rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.title_checkout {
+    color: var(--btn-background);
+    font-family: var(--fuente-cuarta);
+    padding-top: 4.5rem;
+    font-size: 2rem;
+    text-shadow: .2rem 0.2rem rgb(255, 255, 255);
+}
+
+.btn_checkout {
+    font-family: var(--fuente-principal);
+    text-align: var(--btn-text-align);
+    box-shadow: var(--btn-box-shadow);
+    border-radius: var(--btn-border-radius);
+    background: var(--btn-background);
+    padding: 1.2rem;
+    color: white;
+    width: 12rem;
+    margin: 1.5rem auto;
+    font-family: var(--fuente-terciaria);
+    letter-spacing: .1rem;
+    font-size: 1rem;
+}
+
+/* SECTION 4 REVIEWS */
+
+.container_comments {
+    background: #f1f0ee;
+    padding: 2rem;
+}
+
+.subtitle_comments {
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.title {
+    font-family: var(--fuente-principal);
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.photo_customers {
+    width: 8rem;
+    height: 9rem;
+    object-fit: cover;
+    border-radius: 5rem;
+    border: 2px solid rgb(58, 28, 4);
+}
+
+.container_comments_column {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.comments {
+    background: #eeebe6;
+    text-align: center;
+    padding: 1.3rem;
+    text-align: center;
+    margin: 1rem;
+    border-radius: 2rem;
+}
+.name{
+    font-family: var(--fuente-terciaria);
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+.comment_side{
+    padding: .2rem;
+}
+.stars{
+    padding: .5rem;
+}
+.comments_text{
+    font-family: var(--fuente-principal);
+    padding: .1rem;
+}
+/*GRID CODIGO ARA DESPUES 
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;*/

@@ -63,9 +63,12 @@ body {
     font-size: 1.5rem;
 }
 
+.menu_container {
+    display: none;
+}
+
 .menu ul li {
     list-style: none;
-    display: none;
 
 }
 
@@ -102,6 +105,7 @@ body {
 
 .icons i {
     font-size: 2rem;
+    color: #2c2218;
 }
 
 .icons p {
@@ -224,6 +228,10 @@ body {
     padding: 2rem;
 }
 
+.puntos {
+    display: none;
+}
+
 .subtitle_comments {
     font-family: "Dancing Script", cursive;
     text-align: center;
@@ -310,7 +318,7 @@ body {
 .form {
     font-size: 1.2rem;
     text-align: center;
-    
+
 }
 
 #email {
@@ -321,27 +329,201 @@ body {
     box-sizing: border-box;
 }
 
-#email::placeholder{
+#email::placeholder {
     font-family: var(--fuente-principal);
 }
-#email:focus{
+
+#email:focus {
     border: 1px solid rgb(43, 15, 15);
     font-family: var(--fuente-principal);
 }
 
-.btn_form{
+.btn_form {
     font-family: var(--fuente-principal);
     background: var(--btn-background);
     color: white;
-    padding:1.2rem;
+    padding: 1.2rem;
     text-align: center;
     border-radius: var(--btn-border-radius);
     box-shadow: var(--btn-box-shadow);
     margin-top: 2rem;
 }
 
-/*FOOTER/*
+/*FOOTER*/
 
+.footer {
+    background: #2c2218;
+}
+
+.container_footer {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.subtitle_footer {
+    color: #9e958e;
+    font-family: var(--fuente-principal);
+}
+
+.title_footer {
+    color: #d8d2cf;
+    font-family: var(--fuente-terciaria);
+
+}
+
+.container_privacy {
+    padding: 1rem 0;
+}
+
+.logo_footer {
+    color: #e6e4e3;
+    font-size: 1.6rem;
+    font-family: "Tagesschrift", system-ui;
+
+}
+
+.iconos {
+    font-size: 1.3rem;
+    color: #e6e4e3;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+/* ADAPTABILIDAD TABLET */
+
+@media only screen and (min-width: 768px) {
+    .container_footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .iconos {
+        justify-content: space-between;
+    }
+
+    .container_iconos .title_footer {
+        margin-top: 1rem;
+    }
+
+    .menu_container {
+        display: flex;
+    }
+
+    .menu_burger {
+        display: none;
+    }
+
+    .menu ul {
+        display: flex;
+    }
+
+    .menu ul li {
+        display: flex;
+        padding: 0 1.4rem;
+    }
+
+    .menu {
+        justify-content: space-around;
+    }
+
+    .title_header {
+        text-align: start;
+    }
+
+    .container_title {
+        padding: 1.3rem 12rem;
+    }
+
+    .container_comments_column {
+        flex-direction: row;
+    }
+
+    #email {
+        width: 50%;
+    }
+
+    .text_newsletters {
+        padding: 7rem 3rem 0rem 3rem;
+    }
+}
+
+
+/*ADAPTABILIDAD ORDENADORES*/
+@media only screen and (min-width: 992px) {
+    .container {
+        margin: 4rem;
+    }
+
+    .container_title {
+        padding: 8rem 15rem;
+    }
+
+    .menu span {
+        font-size: 2rem;
+    }
+
+    .menu_container {
+        font-size: 1.5rem;
+    }
+
+    .lupa {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .title_header {
+        font-size: 2rem;
+    }
+
+    .header {
+        height: 35rem;
+        padding-top: 2rem;
+    }
+
+    .btn {
+        width: 8rem;
+        padding: 1rem;
+    }
+
+    .container_grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .mug_hot i {
+        font-size: 3rem;
+        padding-left: 4rem;
+    }
+
+    .mug_hot {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .icons p {
+        display: flex;
+        padding-top: 1rem;
+        padding-left: 3rem;
+        font-family: var(--fuente-secundaria);
+    }
+
+    .container_footer {
+        justify-content: space-around;
+    }
+
+    .puntos {
+        display: flex;
+        width: 2rem;
+        margin: 0 auto;
+        height: 2rem;
+    }
+}
 
 /*GRID CODIGO ARA DESPUES 
 

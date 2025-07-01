@@ -65,6 +65,13 @@ body {
 
 .menu_container {
     display: none;
+    position: absolute;
+    background: black;
+    line-height: 2rem;
+    padding: 1rem;
+    left: 5rem;
+    font-size: 1.3rem;
+
 }
 
 .menu ul li {
@@ -452,13 +459,15 @@ body {
 
 /*ADAPTABILIDAD XXS*/
 @media only screen and (max-width: 366px) {
-    .title_header{
+    .title_header {
         font-size: 1.3rem;
     }
-    .icons{
+
+    .icons {
         gap: 3.5rem;
     }
-    .container_grid{
+
+    .container_grid {
         padding: 0 2rem;
     }
 
